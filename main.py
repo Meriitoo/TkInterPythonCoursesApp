@@ -22,7 +22,7 @@ def perform_operations_students():
     total.perform_operations_students()
 
 def open_operation_selection():
-    operations_types_dict = choose.load_operations_types()
+    operations_types_dict = choose.load_operations_types("operation_types.csv")
     operations_list = choose.load_operations("operations.csv")
     choose.show_students_by_operation(operations_types_dict, operations_list)
 
